@@ -1,0 +1,90 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link href="style.css" rel="stylesheet" />
+        <title>Chi tiết sản phẩm</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>GẤU BÔNG CAO CẤP</h1>
+            <p>Dễ thương - Đáng yêu - Xinh xinh</p>
+        </div>
+        <div class="topnav">
+            <a href="index.html">Trang chủ</a>
+            <a href="#">Gấu</a>
+            <a href="#">Gấu bông mới</a>
+            <a href="#">Gấu hoạt hình</a>
+            <a href="#" style="float: right">Đăng nhập</a>
+        </div>
+  <form id="form_reg" class="bg-light p-4 my-3" action="reg.php" method="post">
+        <div class="header" >
+          
+            <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+        </div>
+  <script src="JavaScript/Dangkythanhvien.js"></script>
+</head>
+<body>
+
+  <form onsubmit="return validateForm()">
+    
+
+    <label for="studentId">Mã số sinh viên:</label><br>
+    <input type="text" id="studentId" name="studentId"><br>
+
+    <label for="name">Tên:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+
+    
+    
+        <div class="form-row">
+          <label for="gender">Giới tính:</label>
+          <input type="radio" id="male" name="gender" value="Nam">
+    <label for="male">Nam</label>
+    <input type="radio" id="female" name="gender" value="Nữ">
+    <label for="female">Nữ</label><br>
+    <div id="genderError" class="error"></div>
+        </div>
+        
+        <div class="form-row">
+          <label for="interest">Sở thích:</label>
+          <input type="checkbox" id="reading" name="preferences" value="Đọc sách">
+    <label for="reading">Đọc sách</label>
+    <input type="checkbox" id="traveling" name="preferences" value="Du lịch">
+    <label for="traveling">Du lịch</label>
+    <input type="checkbox" id="music" name="preferences" value="Âm nhạc">
+    <label for="sports">Âm nhạc</label>
+    <input type="checkbox" id="cuisine" name="preferences" value="Ẩm thực">
+    <label for="sports">Ẩm thực</label>
+    <input type="checkbox" id="other" name="preferences" value="Khác">
+    <label for="sports">Khác</label>
+   
+    <div id="preferencesError" class="error"></div>
+        </div>
+        
+        <div class="form-row">
+          <label for="nationality">Quốc tịch:</label>
+          <select id="nationality" name="nationality">
+            <option value=""></option>
+            <option value="Việt Nam">Việt Nam</option>
+            <option value="Mỹ">Mỹ</option>
+            <option value="Anh">Anh</option>
+            
+          </select><br> 
+        </div>
+        
+
+    <label for="note">Ghi chú:</label><br>
+    <textarea id="note" name="note" rows="4" ></textarea><br>
+
+    <input type="submit" name="btn-reg" value="Đăng ký">
+  </form>
+</form>
+</body>
+</html>
